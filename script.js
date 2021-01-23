@@ -8,7 +8,6 @@ const btnSwap = document.getElementById('swap-btn');
 function calculate() {
     var valueExchange1 = exchangeRate_1.value;
     var valueExchange2 = exchangeRate_2.value;
-    
 
      fetch(`https://api.exchangeratesapi.io/latest?base=${valueExchange1}`)
         .then(res => res.json())
